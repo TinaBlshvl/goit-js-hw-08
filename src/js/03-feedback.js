@@ -19,7 +19,6 @@ function onElemInput(evt) {
     let dataString = JSON.stringify(formData);
     localStorage.setItem(STORAGE_KEY, dataString)
 
-    console.log(value);
 }
 
 function onFormSubmit(evt) {
@@ -27,6 +26,8 @@ function onFormSubmit(evt) {
     evt.currentTarget.reset()
 
     localStorage.removeItem(STORAGE_KEY);
+
+    console.log(formData);
 
     formData.message = "";
     formData.email = "";
