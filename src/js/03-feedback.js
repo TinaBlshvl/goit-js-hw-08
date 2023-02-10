@@ -39,9 +39,9 @@ function getText() {
     if (savedText) {
         let objectValue = JSON.parse(savedText);
 
-        textareaEl.value = objectValue.message;
-        inputEl.value = objectValue.email;
-        formData.email = objectValue.email;
-        formData.message = objectValue.message;
+        textareaEl.value = objectValue?.message;
+        inputEl.value = objectValue?.email;
+        formData.email = objectValue?.email;
+        formData.message = objectValue?.message;
     }
 }
